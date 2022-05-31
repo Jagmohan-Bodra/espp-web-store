@@ -1,0 +1,171 @@
+@import './variables.scss';
+
+// Override Bootstrap 4.5.0
+@import './bootstrap-custom/button';
+@import './bootstrap-custom/nav';
+@import './bootstrap-custom/navbar';
+@import './bootstrap-custom/input-group';
+@import './bootstrap-custom/badges';
+@import './bootstrap-custom/card';
+@import './bootstrap-custom/dropdown';
+@import './bootstrap-custom/modal';
+@import './bootstrap-custom/table';
+@import './bootstrap-custom/list-group';
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #4d4d4d;
+}
+p, span, strong, label, a, b, i {
+  color: #2e2e2e;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row-reset-m {
+  margin-right: auto;
+  margin-left: auto;
+}
+.underline {
+  text-decoration: underline;
+}
+.mb-6 {
+  margin-bottom: 3.75rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  &-check-circle {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: .375rem solid $gray-100;
+    margin-right: 1rem;
+    border-radius: 50%;
+    flex: 0 0 1.5rem;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: .75rem;
+      height: .75rem;      
+      background: $gray-600;
+      border-radius: 50%;
+      background: $white;
+    }
+    &--empty {
+      border-width: .1875rem;
+      &::after {
+        background: $white;
+      }
+    }
+    &--tick {
+      border-width: .1875rem;
+      border-color: $gray-600;
+      background: $gray-600;
+      &::after {
+        background: transparent;
+        width: 8px;
+        height: 12px;
+        border-bottom: 2px solid $white;
+        border-right: 2px solid $white;
+        transform: rotate(45deg);
+        top: 1px;
+        border-radius: 0;
+      }
+
+    }
+  }
+}
+
+.table th {
+  border-top: 0;
+}
+
+form > * {
+  margin-left: .125rem;
+  margin-right: .125rem;
+}
+
+.bg-primary {
+  color: $white;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.item-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+.content-center {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure{
+    &.image {
+      img {
+        width: 100%;
+      }
+  }
+}
+.image-style-side {
+  float: right;
+  margin-left: 30px;
+  max-width: 50%;
+}
+
+.arrow-popup-drop-down-menu {
+  width: auto;
+  :after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    margin-left: 5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #f8f9fa transparent;
+  }
+}
+
+.min-50vh {
+  min-height: 50vh;
+}
+
+h1.common-page-title {
+  color: #4D4D4D;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}

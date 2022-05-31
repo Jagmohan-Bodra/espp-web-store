@@ -1,0 +1,32 @@
+.input-group-vertical {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.26666666666666666);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: baseline;
+  &_label {
+    color: #b8b8b8;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    width: auto;
+    flex: 0 0 130px;
+    margin: 0;
+  }
+  &_input {
+    border: none;
+    padding: 0;
+    height: auto;
+    font-size: 14px;
+    flex-grow: 10;
+    width: auto;
+    &:focus {
+      box-shadow: none;
+    }
+    &:disabled {
+      background: white !important;
+      cursor: not-allowed;
+    }
+  }
+}

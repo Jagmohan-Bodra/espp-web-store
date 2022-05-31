@@ -1,0 +1,43 @@
+.header-page-corporate-profile {
+    h1, h1 *, h2, h2 * {
+      color: #4D4D4D !important;
+    }
+    margin-bottom: 30px;
+    &_container {
+      text-align: center;
+      margin: auto;
+      padding: 0 20px;
+      margin-top: 120px;
+      &_title {
+        font-size: 3rem;
+        line-height: 3em;
+      }
+      &_content {
+        line-height: 2em;
+        margin: 30px 0;
+        @include media-breakpoint-only(xs) { 
+            padding: 0 15px;
+        }
+        @include media-breakpoint-only(sm) {
+            padding: 0 15px;
+        }
+      }
+      &_bold {
+        display: flex;
+        flex-direction: column;
+        background-image: url('/images/quote.svg');
+        background-repeat: no-repeat;
+        background-position: 42% 0%;
+        background-size: 100px;
+        height: 8rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 35px 0px;
+        opacity: 0.7;
+        &_content {
+            font-weight: 700;
+            line-height: 2em;
+        }
+    }
+    }
+  }

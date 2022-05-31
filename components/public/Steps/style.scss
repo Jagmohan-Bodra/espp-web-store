@@ -1,0 +1,59 @@
+.component-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        &_number_active {
+            padding: 7px 14px;
+            align-self: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #021389;
+            &_span {
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        &_number_inactive {
+            padding: 7px 14px;
+            align-self: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #eee;
+            &_span {
+                font-size: 18px;
+                color: #777;
+            }
+        }
+        &_description {
+            position: absolute;
+            margin-top: 50px;
+            width: 17%;
+            @include media-breakpoint-only(xs) { 
+                width: 28%;
+            }
+            @include media-breakpoint-only(sm) {
+                width: 28%;
+            }
+            text-align: center;
+            &_span {
+                position: relative;
+                right: 40%;
+
+            }
+
+        }
+        &_inline {
+            content: '';
+            border-top: 2px solid #777;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.our-story-hedonist-roots {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &_container {
+        @include media-breakpoint-only(xs) { 
+            padding: 0 20px;
+        }
+        @include media-breakpoint-only(sm) {
+            padding: 0 20px;
+        }
+        &_left {
+            &_title {
+                margin-bottom: 30px;
+            }
+            &_content {
+                line-height: 2em;
+            }
+        }
+        &_right {
+            &_image {
+                height: 600px;
+                @include media-breakpoint-only(xs) { 
+                    height: 300px;
+                }
+                @include media-breakpoint-only(sm) {
+                height: 400px;
+                }
+                @include media-breakpoint-only(md) {
+                height: 500px;
+                }
+            }
+        }
+        &_bold {
+            padding: 30px 40px;
+            text-align: center;
+            &_content {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+}

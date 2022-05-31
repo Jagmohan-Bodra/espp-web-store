@@ -1,0 +1,97 @@
+.profile-layout-component {
+  padding: 150px 150px 150px 0;
+  @include media-breakpoint-down(lg) {
+    padding: 135px 30px 150px 30px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 135px 30px 150px 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 135px 5px 150px 5px;
+  }
+  &_body {
+    &_left {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-image: none;
+      max-width: 26.625rem;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 150px 0 150px 150px;
+      background: #efe6d6;
+      @include media-breakpoint-down(md) {
+        position: unset;
+        max-width: unset;
+        height: unset;
+        padding: 0px;
+        margin-bottom: 20px;
+      }
+      &_btn_nav {
+        display: none;
+      }
+      &_collapse {
+        &_group {
+          @include media-breakpoint-up(md) {
+            display: block !important;
+          }
+          @include media-breakpoint-down(sm) {
+            overflow: scroll;
+            &::-webkit-scrollbar{
+             display: none; 
+            }
+          }
+          &_box {
+            @include media-breakpoint-down(md) {
+              display: flex;
+              padding-left: 15px;
+            }
+            @include media-breakpoint-down(sm) {
+              width: calc(100vw + 150px);
+            }
+            &_link {
+              font-size: 16px;
+              line-height: 3em;
+              @include media-breakpoint-down(md) {
+                margin-right: 35px;
+              }
+              @include media-breakpoint-down(sm) {
+                margin-right: 20px;
+              }
+              a {
+                color: #4e4e4e;
+                font-weight: 300;
+              }
+              &.active {
+                @include media-breakpoint-down(md) {
+                  border-bottom: 2px solid #c4b594;
+                } 
+                a {
+                  font-weight: 700 !important;
+                  text-decoration: underline;
+                  color: black !important;
+                  @include media-breakpoint-down(md) {
+                    text-decoration: none;
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &_content {
+      padding-bottom: 3.9875rem;
+      min-height: 100vh;
+      position: relative;
+      @include media-breakpoint-up(lg) {
+        margin-left: 30.625rem;
+      }
+    }
+  }
+}

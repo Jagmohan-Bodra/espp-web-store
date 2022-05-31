@@ -1,0 +1,66 @@
+stages:
+  - test
+  - build-staging
+  - deploy-staging
+  - build-showroom
+  - deploy-showroom
+
+ci-lint:
+  stage: test
+  image: node:12
+  script:
+    - npm i
+    - npm run lint
+
+build-staging:
+  only: [staging]
+  stage: build-staging
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t registry.gitlab.com/wioutsource/espp-store/espp-web-store:staging .
+    - docker push registry.gitlab.com/wioutsource/espp-store/espp-web-store:staging
+
+deploy-staging:
+  only: [staging]
+  stage: deploy-staging
+  image: registry.gitlab.com/wioutsource/cleanclean/nextjs-website:ansible-staging
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+  script:
+    - cd /work/ansible
+    - ANSIBLE_HOST_KEY_CHECKING=false ansible-playbook -i inventory/staging playbook.yml
+
+#**** showroom ***#
+
+build-showroom:
+  only: [master]
+  stage: build-showroom
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t registry.gitlab.com/wioutsource/espp-store/espp-web-store:showroom .
+    - docker push registry.gitlab.com/wioutsource/espp-store/espp-web-store:showroom
+
+deploy-showroom:
+  only: [master]
+  stage: deploy-showroom
+  image: registry.gitlab.com/wioutsource/cleanclean/nextjs-website:ansible-showroom
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+  script:
+    - cd /work/ansible
+    - ANSIBLE_HOST_KEY_CHECKING=false ansible-playbook -i inventory/prod playbook.yml
+#**** production espp ***#

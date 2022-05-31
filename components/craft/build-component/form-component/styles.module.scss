@@ -1,0 +1,40 @@
+.menu_static_block {
+  margin-right: 100px;
+}
+.menu_static {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  .ant-space-item {
+    display: flex;
+    margin: -65px 9px 0 10px;
+  }
+}
+.menu_static_group { 
+  display: flex;
+  margin: -100px 10px -40px 10px;
+  background: #3354A3;
+}
+.menu_static_item {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 0 10px 10px 10px;
+  cursor: pointer;
+}
+
+.menu_static_item svg {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 992px) {
+  .menu_static {
+    margin: 0 !important;
+  }
+  .menu_static_block{
+    margin-right: 0 !important;
+    
+  }
+}

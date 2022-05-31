@@ -1,0 +1,10 @@
+@import './list-product-category/style.scss';
+
+.about-us-product-catalogue {
+  h1, h1 *, h2, h2 * {
+    color: #4D4D4D !important;
+  }
+  &_header {
+    margin: 120px 0px;
+  }
+}

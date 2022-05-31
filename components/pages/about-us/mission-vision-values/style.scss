@@ -1,0 +1,168 @@
+.mission-vision-values {
+  h1, h1 *, h2, h2 * {
+    color: #4D4D4D !important;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  &_section_1 {
+    padding: 90px 0px 300px 0;
+    text-align: center;
+    @include media-breakpoint-only(xs) {
+      padding: 90px 0px 300px 0;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 90px 0px 300px 0;
+    }
+    p {
+      max-width: 800px;
+      margin: auto;
+      white-space: pre-line;
+    }
+  }
+  &_double_mark_bg {
+    background-image: url('/images/quote.svg');
+    background-repeat: no-repeat;
+    background-position: 42% 50%;
+    background-size: 100px;
+    height: 8rem;
+    margin-top: 4rem;
+    padding: 25px 0px;
+    opacity: 0.3;
+  }
+
+  &_double_mark_text {
+    position: relative;
+    top: -45px;
+  }
+
+  &_section_2 {
+    background-color: $pink-l-1;
+    padding-bottom: 150px;    
+  }
+
+  &_swipers {
+    .swipers-component_btn_next {
+      @include media-breakpoint-only(xs) {
+      right: 0 !important;
+      }
+      @include media-breakpoint-only(sm) {
+        right: 0!important;
+      }
+    }
+    .swipers-component_btn_prev {
+      @include media-breakpoint-only(xs) {
+        left: 0!important;
+      }
+      @include media-breakpoint-only(sm) {
+        left: 0!important;
+        }
+    }
+  
+    position: relative;
+    top: -150px;
+    margin-top: 150px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      background: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      opacity: 1;
+      box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+      @include media-breakpoint-only(xs) {
+        width: 30px;
+        height: 30px;
+      }
+      @include media-breakpoint-only(sm) {
+        width: 30px;
+        height: 30px;
+      }
+      &:after {
+        font-size: 22px;
+        color: $gray-1;
+      }
+    }
+    .swiper-button-prev {
+      &:after {
+        content: '<';
+      }
+    }
+    .swiper-button-next {
+      &:after {
+        content: '>';
+      }
+    }
+    .card {
+      background-color: transparent;
+      flex-direction: row;
+      @include media-breakpoint-only(sm) {
+        flex-direction: unset;
+        flex-direction: column;
+      }
+      @include media-breakpoint-only(xs) {
+        flex-direction: unset;
+        flex-direction: column;
+      }
+      
+      .card-img {
+        max-width: 450px;
+        @include media-breakpoint-only(sm) {
+          height: auto;
+          max-width: 100%;
+        }
+        @include media-breakpoint-only(xs) {
+          height: auto;
+          max-width: 100%;
+        }   
+      }
+      .card-body {
+        display: flex;
+        align-items: center;
+      }
+      .card-text {
+        white-space: pre-line;   
+        p, span {
+          // reset inherit
+          background-color: transparent !important;
+          color: #2e2e2e !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+        }
+      }
+    } 
+  }  
+  &_overlay {
+    max-width: 450px;
+    top: 80%;
+    padding: 0;
+    @include media-breakpoint-only(sm) {
+      top: 250px;
+    }
+    
+    @include media-breakpoint-only(xs) {
+      top: 250px;
+    }
+    &_title {
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .swipers-component_btn_next,
+  .swipers-component_btn_prev {
+    top: 4rem;
+    background-color: white;
+    box-shadow: 0px -2px 4px 0 rgb(1 1 1 / 28%);
+  }
+  .swipers-component_btn_prev {
+    left: -5rem;
+  }
+  .swipers-component_btn_next {
+    right: -5rem;
+  }
+}

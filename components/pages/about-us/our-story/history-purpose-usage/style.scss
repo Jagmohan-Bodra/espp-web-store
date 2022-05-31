@@ -1,0 +1,25 @@
+.our-story-history-purpose-usage {
+    margin-bottom: 30px;
+    &_container {
+        @include media-breakpoint-only(xs) { 
+            padding: 0 20px;
+        }
+        @include media-breakpoint-only(sm) {
+            padding: 0 20px;
+        }
+        &_title {
+            margin-bottom: 30px;
+        }
+        &_content {
+            line-height: 2em;
+        }
+        &_bold {
+            padding: 30px 40px;
+            text-align: center;
+            &_content {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+}

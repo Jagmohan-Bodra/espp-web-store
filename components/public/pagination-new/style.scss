@@ -1,0 +1,16 @@
+.pagination-new-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &_item {
+    margin: 0 15px;
+    cursor: pointer;
+    &.visible {
+      cursor: default;
+      color: $gray-1;
+    }
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

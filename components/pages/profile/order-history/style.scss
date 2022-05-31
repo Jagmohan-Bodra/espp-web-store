@@ -1,0 +1,151 @@
+.order-history {
+    &_header {
+        margin-bottom: 30px;
+        &_title {
+            color: #4d4d4d;
+        }
+    }
+    &_wrap_table {        
+        @include media-breakpoint-down(md) {
+            overflow: scroll;
+        }
+    }    
+    &_table {
+        thead > tr {
+            height: 37px;
+        }
+        &_label {
+            height: 40px;
+            background-color: $gray-100;
+            &_span {
+                color: #666;
+                @include media-breakpoint-down(md) {
+                    padding: 0 10px;
+                }
+            }
+        }
+        &_content {
+            &_row {
+                border-top: 1px solid $gray-100;
+                cursor: pointer;
+                &:hover {
+                    background-color: #efefef6b
+                    ;
+                }
+                td {
+                    @include media-breakpoint-down(md) {
+                        padding: 0 10px;
+                    }
+                }
+                
+                &_image {
+                    width: 40px;
+                    height: 40px;
+                    padding: 5px;
+                    margin-right: 5px;
+                    border: 1px solid $gray-100;
+                }
+                &_icon {
+                    width: 20px;
+                    height: 20px;
+                    :hover {
+                        opacity: 0.5;
+                    }
+                }
+                &_btn-status.disabled {
+                    border-radius: 25px;
+                    background-color: #efefef;
+                    border-color: #efefef;
+                    color: $gray_main;
+                    font-size: 0.9rem;
+                    font-style: italic;
+                    font-weight: 500;
+                    padding: 5px 20px;
+                }                
+            }
+        }
+    }
+}
+
+.invoice {
+    width: 100%;
+}
+
+.itemCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.order-history-view {
+    &_header {
+        margin-bottom: 20px;
+        &_title {
+            color: #4d4d4d;
+        }
+    }
+    &_placed {
+        color: #555;
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+    &_btn-status.disabled {
+        border-radius: 25px;
+        background-color: #efefef;
+        border-color: #efefef;
+        color: $gray_main;
+        font-size: 0.9rem;
+        font-style: italic;
+        font-weight: 500;
+        padding: 5px 20px;
+    }
+    &_customer{
+        color: #333;
+        font-size: 1rem;
+    }
+    &_address {
+        color: #333;
+        font-size: 0.9rem;
+        max-width: 280px;
+        display: block;
+    }
+    &_menthod_payment {
+        font-style: italic;
+    }
+    &_tr_total {
+        border-top: 1px solid #ccc;
+        &_number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    &_table {
+        &_label {
+            &_span {
+                color: #666;
+            }
+        }
+        &_content {
+            &_row {
+                border-bottom: 1px solid $gray-100;                
+                &_image {
+                    width: 70px;
+                    height: 70px;
+                    padding: 5px;
+                    margin-right: 5px;
+                    border: 1px solid $gray-100;
+                    @include media-breakpoint-down(sm) {
+                        width: 35px;
+                        height: auto;
+                    }
+                }
+                &_icon {
+                    width: 20px;
+                    height: 20px;
+                    :hover {
+                        opacity: 0.5;
+                    }
+                }               
+            }
+        }
+    }
+}

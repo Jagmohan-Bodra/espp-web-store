@@ -1,0 +1,52 @@
+.header-page-our-story {
+    h1, h1 *, h2, h2 * {
+      color: #4D4D4D !important;
+    }
+    justify-content: center;
+    margin-bottom: 10px;
+    &_container {
+      text-align: center;
+      margin: auto;
+      padding: 0 20px;
+      width: 70%;
+      @include media-breakpoint-only(xs) { 
+        width: 100%;
+      }
+      @include media-breakpoint-only(sm) {
+        width: 90%;
+      }
+      @include media-breakpoint-only(md) {
+        width: 80%;
+      }
+      &_title {
+        font-size: 3rem;
+        line-height: 3em;
+      }
+      &_content {
+        line-height: 2em;
+        margin-bottom: 30px;
+        text-align: center;
+        @include media-breakpoint-only(xs) { 
+          text-align: justify;
+        }
+        @include media-breakpoint-only(sm) {
+          text-align: justify;
+        }
+      }
+    }
+    &_image {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        height: 500px;
+        @include media-breakpoint-only(xs) { 
+            height: 300px;
+        }
+          @include media-breakpoint-only(sm) {
+            height: 350px;
+          }
+          @include media-breakpoint-only(md) {
+            height: 400px;
+          }
+    }
+    
+  }

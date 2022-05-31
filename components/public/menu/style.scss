@@ -1,0 +1,110 @@
+.component-theme-menu {
+  background: transparent !important;
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+  }
+
+  @include media-breakpoint-only(xs) {
+    flex-direction: row-reverse;
+  }
+  @include media-breakpoint-only(sm) {
+    flex-direction: row-reverse;
+  }
+  &-navbar-toggler {
+
+  }
+  &-navbar-collapse {
+    @include media-breakpoint-only(sm) {
+      background-color: white;
+      box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    }
+    @include media-breakpoint-only(xs) {
+      background-color: white;
+      box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    }    
+    &_nav {
+      &_navitem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-only(xs) {
+          padding: 10px;
+        }
+        @include media-breakpoint-only(sm) {
+          padding: 10px;
+        }
+        &_link {
+          color: black !important;
+          padding: 0px 20px !important;
+          font-size: 14px;
+          @include media-breakpoint-only(xs) {
+            text-align: right;
+          }
+          @include media-breakpoint-only(sm) {
+            text-align: right;
+          }
+        }
+      }
+      &_uncontrolled_dropdown {
+        
+        @include media-breakpoint-only(xs) {
+          padding: 10px;
+          text-align: right;
+        }
+        @include media-breakpoint-only(sm) {
+          padding: 10px;
+          text-align: right;
+        }
+        &_toggle {
+          color: black !important;
+          padding: 5px 20px !important;
+          font-size: 14px;
+  
+        }
+        &_dropdown_menu {
+          border: 0;
+          right: -100px;
+          top: 30px;
+          padding-bottom: 15px;
+          background-color: white;
+          box-shadow: 0 2px 6px 0 rgb(32 33 36 / 28%);
+          @include media-breakpoint-only(xs) {
+            right: -0;
+            background-color: transparent;
+            position: relative;
+            .arrow-popup-drop-down-menu {
+              :after {border-color: transparent;}
+            }
+          }
+          @include media-breakpoint-only(sm) {
+            right: -0;
+            background-color: transparent;
+            position: relative;
+            .arrow-popup-drop-down-menu {
+              :after {border-color: transparent;}
+            }
+          }
+          &_dropdownitem {
+            padding: .4rem 1.5rem;
+            @include media-breakpoint-only(xs) {
+              padding: 5px 0;
+            }
+            @include media-breakpoint-only(sm) {
+              padding: 5px 0;
+            }
+          }
+        }
+      }
+    }
+    &_navbartext {
+      @include media-breakpoint-only(xs) {
+        display: block;
+        text-align: right;
+      }
+      @include media-breakpoint-only(sm) {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}

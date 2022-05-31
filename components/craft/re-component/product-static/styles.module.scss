@@ -1,0 +1,142 @@
+//Product List
+.containerMain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.menuLeft {
+    width: 20%;
+    padding: 10px 0px;
+}
+.listRight {
+    width: 80%;
+}
+.listRightProduct {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.selectBox {
+    // display: flex;
+    // flex-direction: row;
+    padding: 10px;
+}
+
+.input_block {
+    margin-bottom: 15px;
+}
+
+
+//Product Detail
+.contentMain {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentMainLeft {
+    width: 50%;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // overflow-y: hidden;
+}
+
+.contentImage {
+    padding: 30px 30px 30px 0px;
+    // img {
+    //     margin-bottom: 20px;
+    // }
+}
+.contentSwiper {
+    width: 100%;
+}
+.contentMainRight {
+    width: 50%;
+}
+
+.btnAddCart {
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    padding: 20px 0px;
+}
+
+.bntFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &:after {
+        content: '|';
+        background: #fff;
+        color: #e2e2e2;
+        position: absolute;
+        left: 70%;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+// Compares Product
+
+.tableCompares {
+    margin: 15px 0px;
+}
+
+.colTitle {
+    border: solid 1px #eee;
+}
+
+.colProduct {
+    border-top: solid 1px #eee;
+    border-right: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    overflow-x: scroll;
+}
+
+.rowEmpty {
+    border-bottom: solid 1px #eee;
+    height: 50px;
+}
+
+.btnRemove {
+    float: right;
+}
+
+.rowOverview {
+    border-bottom: solid 1px #eee;
+    height: 325px;
+    padding: 10px;
+}
+
+.rowOverviewProduct {
+    border-bottom: solid 1px #eee;
+    height: 325px;
+    padding: 10px;
+    border-right: solid 1px #eee;
+}
+
+.boxImage {
+    width: 100%;
+    height: 220px;
+}
+
+.btnOrder {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btnDetail {
+    border: solid 1px #021389;
+    margin-bottom: 15px;
+}
+
+.rowTitle {
+    border-bottom: solid 1px #eee;
+    height: 50px;
+    padding: 10px;
+}
+.rowProduct {
+    border-bottom: solid 1px #eee;
+    border-right: solid 1px #eee;
+    height: 50px;
+    text-align: center;
+}

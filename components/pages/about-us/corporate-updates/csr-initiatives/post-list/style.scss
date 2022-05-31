@@ -1,0 +1,66 @@
+.post-list-csr-initiatives {
+  margin-top: 200px;
+  @include media-breakpoint-only(xs) {
+    margin-top: 50px;
+  }
+  @include media-breakpoint-only(sm) {
+    margin-top: 50px;
+  }
+  &_row {
+    @include media-breakpoint-down(sm) {
+      margin-top: 80px;
+    }
+  }
+  &_col {
+    &_box {
+      margin-bottom: 70px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 10px;
+      }  
+      &_img {
+        border: 1px solid #eee;
+        overflow: hidden;
+        margin-bottom: 25px;
+        height: 335px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        @include media-breakpoint-down(sm) {
+          border: 0;
+          height: 250px;
+        }
+      }
+
+      &_text {
+        padding-left: 15px;
+        @include media-breakpoint-down(sm) {
+          padding-left: 0;
+        }  
+        p {
+          text-align: left;
+          line-height: 35px;
+        }
+        &_date {
+          font-size: 17px;
+          color: #999;
+        }
+        &_title{
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &_description {
+          font-size: 17px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 6;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+        &_link a{
+          color: #408bf9 !important;
+        }
+       
+      }
+    }
+  }
+}

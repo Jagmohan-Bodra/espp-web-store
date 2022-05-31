@@ -1,0 +1,12 @@
+.container-home *{
+  color: $gray_main;
+}
+
+@import './best-seller/style.scss';
+@import './featured-product/style.scss';
+@import './header-slider/style.scss';
+@import './Join-mailing-list/style.scss';
+@import './more-for-you/style.scss';
+@import './new-arrival/style.scss';
+@import './our-brand-partner/style.scss';
+@import './our-story/style.scss';

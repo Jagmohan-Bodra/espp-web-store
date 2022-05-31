@@ -1,0 +1,163 @@
+.cardProductMain {
+    width: 25%;
+    padding-left: 1%;
+    margin-bottom: 15px;
+}
+.cardProductImage {
+    width: 100%;
+    height: 220px;
+    border: solid 1px #eee;
+    margin-bottom: 5px;
+    position: relative;
+}
+.cardProductImage:hover .text {top: 40%}
+.cardProductImage:hover .middle {opacity: 1}
+.cardBoxButton {
+    display: flex;
+    justify-content: space-between;
+}
+.iconAdd {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+}
+.textAdd {
+    font-size: 12px;
+}
+.cardButton {
+    height: 50px;
+    width: 49%;
+    text-align: center;
+    background-color: #eee;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+        color: #666;
+    }
+    &:focus {
+        background-color: #eee;
+        span {
+            color: #666;
+        }
+    }
+    &:hover {
+        background-color: #021389;
+        span {
+            color: #fff;
+        }
+    }
+    
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(233, 238, 255, 0.6);;
+    text-align: center;
+}
+.text {
+    span {
+        color: #fff;
+        font-size: 12px;
+    }
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    transition: all 1s ease;
+    top: 85%;
+    background-color: #021389;
+    line-height: 1.7em;
+  }
+.cardTitleBottomMain {
+    padding: 20px 0;
+    text-align: center;
+
+}
+.cardTitleBottom {
+    cursor: pointer;
+    &:hover {
+        color: #021389;
+    }
+}
+
+.cardMain {
+    width: 23%;
+    margin: 1%;
+    border: solid 1px #eee;
+    padding: 15px 15px 0 15px;
+}
+.cardImage {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+.paganition {
+    width: 100%;
+}
+
+.cardViewMain {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.cardViewImg {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.middleView {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+.textView {
+    button {
+        border: none;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    width: 120px;
+    padding: 5px 0;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    transition: all 1s ease;
+    top: 85%;
+    background-color: #eee;
+    line-height: 1.7em;
+  }
+
+.cardViewImg:hover .textView {top: 40%}
+.cardViewImg:hover .middleView {opacity: 1}
+
+.publicPrice > b{
+    color: #7f7d73;
+    margin-right: 5px;
+}
+.privatePrice > b{
+    color: #8b2f2b;
+}

@@ -1,0 +1,64 @@
+.address-book-page {
+  &_btn {
+    &_create {
+      background-color: #efe6d6;
+      border: 0;
+      color: #444;
+      padding: 10px 20px;
+      font-weight: 700;
+    }
+  }
+
+  &_table {
+    margin-top: 30px;
+    .product {
+      &__row {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #0005;
+        padding: 15px 0;
+        &:nth-child(1) {
+          background: #f8f8f8;
+          border-bottom: 0px solid #0005;
+        }
+        &:last-child {
+          border-bottom: 0px solid #0005;
+        }
+        @include media-breakpoint-down(md) {
+          display: flex !important;
+        }
+      }
+      &__col {
+        &.col__title {
+          color: #828176;
+          font-weight: bold;
+        }
+        &:nth-child(1) {
+          width: 26%;
+          padding: 0px 10px;
+        }
+        &:nth-child(2) {
+          width: 40%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
+        &:nth-child(4) {
+          width: 14%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.address-book-page_modal {
+  &_title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  &_tip {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

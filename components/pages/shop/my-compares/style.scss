@@ -1,0 +1,126 @@
+.my-compares-container {
+    margin-bottom: 100px;
+    &_header {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0;
+    }
+    &_table {
+        margin: 15px 0px;
+        &_title {
+            &_photo {
+                &_span {
+                    margin-top: 95px;
+                    position: absolute;
+                    padding: 0px 5px;
+                }
+                padding: 0 15px;
+                height: 300px; 
+                @include media-breakpoint-only(sm) {
+                    height: 240px;
+                }
+                @include media-breakpoint-only(xs) {
+                    height: 240px;
+                }
+            }
+            &_text {
+                height: 50px;
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+                &_description {
+                    padding: 15px;
+                    min-height: 190px;
+                }
+            }
+        }
+        &_product {
+            overflow-x: scroll;
+            padding: 0;
+            &_container {
+                padding: 0;
+            }
+            &_photo {
+                height: 300px;
+                padding: 0 15px;
+                @include media-breakpoint-only(sm) {
+                    height: 240px;
+                }
+                @include media-breakpoint-only(xs) {
+                    height: 240px;
+                }
+                &_content {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 30px 0;
+                    &_description {
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                    }
+                }
+            }
+            &_content {
+                height: 50px;
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+                &_public_price {
+                    color: $gray-2;
+                    font-weight: bold;
+                }
+                &_private_price {
+                    color: $red-d-1;
+                    font-weight: bold;
+                    text-decoration: none !important;
+                    margin: 0 15px;
+                }
+                &_description {
+                    padding: 15px;
+                    min-height: 190px;
+                    &_span {
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        cursor: pointer;
+                        &.show-more {
+                            -webkit-line-clamp: unset;
+                        }
+                    }
+                }
+            }
+            &_box_button {
+                margin: 40px 0;
+                padding: 0 15px;
+                &_add {
+                    background-color: #eee5d7;
+                    text-align: center;
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+                    flex-direction: row;
+                    display: flex;
+                    justify-content: center;
+                    &_span {
+                        margin-left: 5px;
+                    }
+                    cursor: pointer;
+                }
+                &_remove {
+                    background-color: #dbdbdb;
+                    text-align: center;
+                    padding: 10px 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+.color-row {
+    background-color: #f8f8f8;
+}

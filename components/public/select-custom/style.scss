@@ -1,0 +1,49 @@
+.select-custom-component {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.9em;
+  margin: 0;
+  &:hover input ~ .select-custom-component_checkmark{
+    background-color: #dbcaa5aa;
+  }
+  &_input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    &:checked ~ .select-custom-component_checkmark {
+      background-color: #dbcaa5 !important;
+    }
+    &:checked ~ .select-custom-component_checkmark:after {
+      display: block;
+    }
+  }
+  &_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #dbcaa5;
+    border-radius: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 10px;
+      left: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}

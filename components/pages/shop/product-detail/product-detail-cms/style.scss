@@ -1,0 +1,19 @@
+.product-details-cms {
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-only(xs) {
+      padding: 0 15px;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 0 15px;
+    }
+    &_container {
+        margin: 25px 0;
+        &_title {
+            font-size: 18px;
+        }
+        &_content {
+            margin: 50px 0;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.text-image-corporate-profile {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    &_container {
+        @include media-breakpoint-only(xs) { 
+            padding: 0 15px;
+        }
+        @include media-breakpoint-only(sm) {
+            padding: 0 15px;
+        }
+        &_left {
+            line-height: 2.4em;
+            padding: 0 20px 0 15px;
+            @include media-breakpoint-only(xs) { 
+                padding: 0 15px;
+            }
+            @include media-breakpoint-only(sm) {
+                padding: 0 15px;
+            }
+            &_title {
+                margin-bottom: 30px;
+            }
+            &_content {
+                line-height: 2em;
+            }
+        }
+        &_right {
+            padding: 0 15px 0 30px;
+            @include media-breakpoint-only(xs) { 
+                padding: 0 15px;
+            }
+            @include media-breakpoint-only(sm) {
+                padding: 0 15px;
+            }
+            &_image {
+                width: 100%;
+            }
+        }
+        &_bold {
+            padding: 30px 40px;
+            text-align: center;
+            &_content {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+}

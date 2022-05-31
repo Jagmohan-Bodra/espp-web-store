@@ -1,0 +1,127 @@
+.shop-page {
+  margin-bottom: 100px;
+  min-height: 500px;
+  .common-page-title {
+    margin-bottom: 5rem;
+  }
+  
+  @include media-breakpoint-only(xs) {
+    padding: 0 15px;
+  }
+  @include media-breakpoint-only(sm) {
+    padding: 0 15px;
+  }
+  &_header {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 48px;
+  }
+  &_body {
+    &_menu_left {
+      
+    }
+    &_menu_top {
+      
+    }
+  }
+}
+
+.shop-page_menu_left {
+  .collapse-category {
+    &:first-child {
+      .collapse-category_title {
+        border-top: 1px solid #aaa;
+        border-bottom: 1px solid #aaa
+      }
+    }
+    &:last-child {
+      .collapse-category_title {
+        border-top: 0px solid #aaa;
+        border-bottom: 1px solid #aaa
+      }
+    }
+    &_title {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid #aaa;
+      border-top: 0px solid #aaa;
+      cursor: pointer;
+    }
+    &_collapse {
+      padding-left: 15px;
+    }
+    &-children {
+      &_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+        cursor: pointer;
+      }
+      &_collapse {
+        padding-left: 15px;
+      }
+    }
+    &_link {
+      padding: 10px 0;
+      cursor: pointer;
+      &.active {
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.shop-page_menu_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-breakpoint-down(lg) {
+    margin-top: 35px;
+  }
+  &_on_left {
+    display: flex;
+    flex-direction: row;
+    .form-control {
+      margin: 0 5px;
+    }
+  }
+  &_on_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    &_group {
+      display: flex;
+      &_content {
+        width: 300%;
+        line-height: 2.4em;
+      }
+      &_select {
+        min-width: 70px;
+      }
+    }
+  }
+}
+
+.shop-page_product {
+  padding: 15px;
+  &_list {
+    &_item {
+      padding: 0 30px 30px 0;
+      @include media-breakpoint-only(xs) {
+        padding: 0;
+      }
+      @include media-breakpoint-only(sm) {
+        padding: 0;
+      }
+    }
+  }
+  &_meta {
+
+  }
+}

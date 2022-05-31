@@ -1,0 +1,43 @@
+.menuListMain {
+    cursor: pointer
+}
+.listDropDown {
+    list-style: none;
+    width: 100%;
+}
+.titleMenu {
+    height: 40px;
+}
+.titleMenuLeft {
+    padding-right: 20px
+}
+.titleMenuCenter {
+
+}
+.titleMenuRight {
+    float: right;
+}
+.textName {
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    line-height: 2.4em;
+    &:hover {
+        color: #021389;
+    }
+}
+.textViewAll {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 2.4em;
+}
+
+.active {
+    color: #021389;
+    background-color: #eeea;
+    padding-left: 15px;
+}

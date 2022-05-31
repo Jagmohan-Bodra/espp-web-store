@@ -1,0 +1,30 @@
+@import './header-text-image/style.scss';
+@import './history-purpose-usage/style.scss';
+@import './hedonist-roots/style.scss';
+@import './remixing-a-classic/style.scss';
+@import './interpreting-nonsense/style.scss';
+
+.our-story-component {
+  line-height: 2em;
+  padding: 15px;
+  &_title{
+    background-image: url(/images/quote.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100px;
+    min-height: 77px;
+    padding-left: 22px;
+    padding-top: 41px;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.3em;
+    @include media-breakpoint-only(xs) { 
+      font-size: 1rem;
+    }
+    @include media-breakpoint-only(sm) { 
+      font-size: 1rem;
+    }
+  }
+}

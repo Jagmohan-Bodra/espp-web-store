@@ -1,0 +1,146 @@
+.order_details {
+  padding: 0 20px 20px 20px;
+}
+
+.order_details_header {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  color: #424242;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+  font-family: Roboto-Regular;
+  color: #5d5d5d;
+  letter-spacing: .09px;
+}
+
+.order_details_shop {
+  margin-bottom: 12px;
+  padding-bottom: 24px;
+  background-color: #fff;
+}
+
+.order_details_shop_header {
+  position: relative;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 12px;
+}
+
+.order_details_shop_status {
+  background-color: #ecf0f7;
+  color: #333;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.order_details_shop_body_item {
+  min-height: 80px;
+  padding: 24px 12px 0 36px;
+}
+
+.order_details_shop_body_item_sku {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #bbb;
+  line-height: 18px;
+}
+
+.order_details_info {
+  padding: 12px;
+  min-height: 50px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  line-height: 2em;
+}
+
+.order_number {
+  margin-bottom: 4px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.order_text {
+  color: #9e9e9e;
+  font-size: 12px;
+  line-height: 16px;
+  word-break: break-word;
+  box-sizing: inherit;
+  margin-bottom: 0em;
+}
+
+.location__body_details {
+  font-size: 12px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.address_tag_label {
+  background-image: linear-gradient(39deg, rgb(0, 148, 182) 0%, rgb(91, 187, 206) 100%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px 13px;
+  border-radius: 99px;
+  margin-right: 10px
+}
+
+.shop_left_info_logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+}
+
+.order_details_shop_body_track_package {
+  background-color: #fafaf7;
+  border: 1px solid #aaa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.order_details_shop_body_track_package_button {
+  color: #021389;
+  border: 2px solid #021389;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.manager_account {
+  padding: 0px 15px 15px 15px;
+}
+
+.order_list_tabs {
+  height: 28px;
+  border-bottom: 2px solid #979797;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.order_tab_item {
+  display: inline-block;
+  font-size: 13px;
+  height: 29px;
+  line-height: 32px;
+  color: #5d5d5d;
+  padding: 0 20px;
+}
+
+.order_tab_item_active {
+  border-bottom: 4px solid #003e52;
+}
+
+.orders {
+  width: 100%;
+}
+
+.order_get_list {
+  width: 100%;
+}
+
+.order_item {
+  cursor: pointer;
+}

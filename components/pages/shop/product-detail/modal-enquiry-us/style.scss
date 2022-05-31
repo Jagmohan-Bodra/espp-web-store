@@ -1,0 +1,43 @@
+.modals-enquiry-us {
+    .modal-content {
+        width: 600px;
+    }
+    &_modal {
+        width: 600px;
+        padding: 2rem;
+        @include media-breakpoint-down(sm) {
+            width: auto;
+        }
+        &_header {
+            display: flex;
+            margin: 15px 0;
+            color: #2e2e2e;
+        }
+        &_btn_close {
+            display: flex;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            padding: 8px;
+            border-radius: 15px;
+            background-color: #eee;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        &_form {
+            &_input {
+                .col-form-label {
+                    color: #2e2e2e
+                }
+            }
+            &_btn {
+                width: 100%;
+                background-color: #f8f8f8;
+                color: #444;
+                border: 0;
+            }
+        }
+    }
+}

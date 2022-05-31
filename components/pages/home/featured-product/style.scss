@@ -1,0 +1,131 @@
+.home-featured-product {
+  &-row {
+    margin: 0px;
+  }
+  &-col-left,
+  &-col-right{
+    padding: 0px;
+  }
+  &-left {
+    &_swiper {
+      max-height: 900px;
+      @include media-breakpoint-only(xs) {
+        height: 400px;
+      }
+      @include media-breakpoint-only(sm) {
+        height: 400px;
+      }
+      @include media-breakpoint-only(lg) {
+        max-height: 800px;
+      }
+      &_item {
+        position: relative;
+        &_image {
+          max-height: 900px;
+          @include media-breakpoint-only(xs) {
+            height: 400px;
+          }
+          @include media-breakpoint-only(sm) {
+            height: 400px;
+          }
+          @include media-breakpoint-only(lg) {
+            max-height: 800px;
+          }
+          object-fit: cover;
+        }
+        &_content {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          &_label {
+            min-width: 300px;
+            font-size: 24px;
+            background-color: #fffa;
+            color: $gray_main;
+            font-weight: bold;
+            margin: auto;
+            padding: 1.45rem 10px 10px 10px;
+          }
+        }
+      }
+      .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+        bottom: 40px;
+        .swiper-pagination-bullet-active {
+          background: white !important;
+        }
+        .swiper-pagination-bullet {
+          background: transparent;
+          border: 2px solid white;
+          width: 16px;
+          height: 16px;
+          opacity: 1;
+          margin: 0 10px;
+          @include media-breakpoint-only(xs) {
+            width: 12px;
+            height: 12px;
+          }
+          @include media-breakpoint-only(sm) {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    @include media-breakpoint-only(xs) {
+      padding: 7.5px 15px;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 7.5px 15px;
+    }
+    @include media-breakpoint-only(md) {
+      padding: 7.5px 15px;
+    }
+    &_row {
+      padding: 0;
+      margin: 0px;
+      @include media-breakpoint-only(xs) {
+        padding: 0;
+      }
+      @include media-breakpoint-only(sm) {
+        padding: 0;
+      }
+    }
+    &_sumbit {
+      &_btn {
+        display: block;
+        margin: auto;
+        width: 200px;
+        background: white;
+        padding: 10px;
+        color: $gray-900;
+        font-weight: 500;
+        margin-top: 30px;
+        @include media-breakpoint-only(md) {
+          padding: 5px;
+          margin-top: 30px;
+        }
+        @include media-breakpoint-only(lg) {
+          margin-top: 10px;
+        }
+        @include media-breakpoint-only(xs) {
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}
+.home-featured-product-left_swiper {
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}

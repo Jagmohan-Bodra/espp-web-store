@@ -1,0 +1,38 @@
+.page-contact {
+  @include media-breakpoint-only(xs) {
+    padding: 0 15px;
+  }
+  @include media-breakpoint-only(sm) {
+    padding: 0 15px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  &_section_2 {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    form {
+      .form-group {
+        margin-bottom: 1.8rem;
+      }
+      button {
+        color: $gray_main;
+        background-color: #dbdbdb;
+        border-color: #dbdbdb;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &_col_left {
+    padding-right: 3rem;
+    @media (max-width: 768px) {
+      padding-right: 15px;
+    }   
+  }
+  &_col_right {
+    padding-left: 3rem;
+    @media (max-width: 768px) {
+      padding-left: 15px;
+    }   
+  }
+}

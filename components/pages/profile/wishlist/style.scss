@@ -1,0 +1,196 @@
+.wishlist-page {
+  @include media-breakpoint-down(sm) {
+    overflow: scroll;
+  }
+  &_list {
+    @include media-breakpoint-down(sm) {
+      min-width: 600px;
+    }
+    .product {
+      &__row {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #0005;
+        padding: 15px;
+        &:nth-child(1) {
+          background: #f8f8f8;
+          border-bottom: 0px solid #0005;
+        }
+        &:last-child {
+          border-bottom: 0px solid #0005;
+        }
+      }
+      &__col {
+        &:nth-child(1) {
+          width: 5%;
+        }
+        &:nth-child(2) {
+          width: 35%;
+          @include media-breakpoint-down(sm) {
+            min-width: 270px;
+          }
+        }
+        &:nth-child(3) {
+          width: 20%;
+          text-align: center;
+        }
+        &:nth-child(4) {
+          width: 20%;
+          text-align: center;
+        }
+        &:nth-child(5) {
+          width: 10%;
+          text-align: right;
+          @include media-breakpoint-down(sm) {
+            min-width: 90px;
+          }
+        }
+        .product_error_moq {
+          position: absolute;
+          top: 5px;
+          color: red;
+          width: inherit;
+        }
+        .price_private {
+          color: $red-d-1;
+          margin: 0 15px;
+        }
+        &_img {
+          float: left;
+          margin-right: 2rem;
+        }
+        &_product_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 74px;
+          &_name {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+      &_input_quantity {
+        text-align: center;
+        margin-bottom: 1rem;
+        height: 40px;
+      }
+      &_box_quantity {
+        position: relative;
+        max-width: 110px;
+        margin: auto;
+        .value-button {
+          position: absolute;
+          top: 9px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 27px;
+          height: 20px;
+          padding: 11px 0;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          cursor: pointer;
+        }
+        .quantity-decrease {
+          left: 0;
+          font-size: 20px;
+        }
+        .quantity-increase {
+          right: 0;
+          font-size: 16px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        /* Firefox */
+        input[type='number'] {
+          -moz-appearance: textfield;
+        }
+      }
+      .btn-cart-remove-item {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .col__title {
+      font-size: 16px;
+    }
+  
+    .col__title .cart_checkbox_custom {
+      position: relative;
+      bottom: 15px;
+    }
+    .cart_checkbox_custom {
+      .container_checkbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .container_checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 1px solid #c4b594;
+      }
+      .container_checkbox:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      .container_checkbox input:checked ~ .checkmark {
+        background-color: #c4b594;
+      }
+      .checkmark:after {
+        content: '';
+        position: absolute;
+        display: none;
+      }
+      .container_checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .container_checkbox .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &_checkout {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    background: #efe6d6;
+    padding: 15px;
+  }
+}

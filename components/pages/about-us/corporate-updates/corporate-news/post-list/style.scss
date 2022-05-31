@@ -1,0 +1,52 @@
+.list-corporate-new {
+  margin-bottom: 200px;
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 50px;
+  }
+  @include media-breakpoint-only(sm) {
+    margin-bottom: 50px;
+  }
+  &_col {
+    &_box {
+      margin-bottom: 70px;
+      &_img {
+        border: 1px solid #eee;
+        overflow: hidden;
+        margin-bottom: 25px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        img {
+          height: 150px;
+          max-width: 100%;
+          margin: auto;
+          display: block;
+          object-fit: scale-down;
+        }
+      }
+
+      &_text {
+        p {
+          text-align: left;
+        }
+        &_date {
+          font-size: 18px;
+          color: #999;
+        }
+        &_title {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &_description {
+          font-size: 18px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.empty-component {
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 1.5715;
+  text-align: center;
+  &_icon {
+    height: 100px;
+    margin-bottom: 8px;
+  }
+  &_description {
+    color: #000000d9;
+  }
+  &_footer {
+    margin-top: 16px;
+  }
+}

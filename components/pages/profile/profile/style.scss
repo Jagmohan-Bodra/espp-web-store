@@ -1,0 +1,68 @@
+.profile-page {
+  &_avatar {
+    margin-bottom: 30px;    
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+    &_title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    &_img {
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      &_link {
+        width: 120px;
+        margin-top: 0.5rem;
+        text-align: center;
+        color: #408bf9;
+        @include media-breakpoint-down(md) {
+          margin: auto;
+          margin-top: 0.5rem;
+        }
+        label {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &_form {
+    &_col_email .input-group-horizontal {
+      background-color: #efefef;
+    }
+    .input-group-horizontal_input:disabled {
+      background: unset !important;
+      background-color: #efefef !important;
+    }
+    .row {
+      margin-bottom: 15px;
+    }
+    .col-xl-6 {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &_footer {
+    float: right;
+    &_cancel {
+      padding: 7px 15px;
+      min-width: 120px;
+      border: none;
+      background: #efefef;
+    }
+    &_submit {
+      padding: 10px 15px;
+      min-width: 120px;
+      border: none;
+      background: #efe6d6;
+      margin-left: 15px;
+    }
+  }
+}

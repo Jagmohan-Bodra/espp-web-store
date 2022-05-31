@@ -1,0 +1,47 @@
+.component-post-cart {
+  &_image_group {
+    overflow: hidden;
+    &_img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      margin: auto;
+      display: block;
+    }
+  }
+  &_content_group {
+    margin-top: 1.5rem;
+    &_name {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 2.4em;
+      color: $gray_main;
+      margin-bottom: 15px;
+    }
+    &_description {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: $gray_main;
+      line-height: 2em;
+      &_span {
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+      }
+    }
+    &_read_more {
+      &_a {
+        font-size: 14px;
+        color: $gray_main;
+        text-decoration: underline;
+        font-weight: 600;
+        &:hover {
+          color: $gray-2;
+        }
+      }
+    }
+  }
+}

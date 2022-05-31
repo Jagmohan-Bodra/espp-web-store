@@ -1,0 +1,97 @@
+.btnLink {
+    background-color: transparent;
+    border: none;
+    color: #444;
+    font-weight: 600;
+    text-decoration: underline;
+    &:hover {
+        background-color: transparent;
+        color: #ccc;
+        text-decoration: underline;
+    }
+}
+
+
+.btnMain {
+    background-color: #021389;
+    border-color: #021389;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: white;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: #021389;
+        border-color: #021389;
+        color: white;
+        span {
+            color: white;
+        }
+    }
+}
+
+.btnTransparent {
+    background-color: transparent;
+    border-color: transparent;
+    color: #021389;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    span {
+        color: #021389;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: #021389;
+        span {
+            color: #021389;
+        }
+    }
+}
+
+.btnCustum {
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.static_menu_button {
+    display: block;
+    position: fixed;
+    top: 7px;
+    right: 7px;
+    color: rgba(255,255,255,.55);
+    cursor: pointer;
+    padding: .75rem .75rem;
+    font-size: 14px;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #0A193A;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    color: #0A193A;
+    background: white;
+}
+@media (min-width: 992px) {
+    .static_menu_button {
+        display: none ;
+    }
+}

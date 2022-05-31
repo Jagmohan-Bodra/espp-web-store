@@ -1,0 +1,38 @@
+.sign-up-info {
+    margin: 50px 0;
+    &_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &_step {
+            width: 60%;
+        }
+        &_form {
+            padding: 0 15px;
+            &_row {
+                margin-top: 40px;
+            }
+            &_title {
+                display: flex;
+                margin: 0px 0px 20px 0px;
+            }
+            &_boxBtn {
+                float: right;
+                &_btnPre {
+                    background-color: transparent;
+                    color: #444;
+                    padding: 4px 45px;
+                }
+                &_btnSubmit {
+                    background-color: #efe6d6;
+                    border: 0;
+                    color: #444;
+                    padding: 5px 45px;
+                }
+            }
+        }
+    }
+}
+.border_right {
+    border-right: 1px solid #eee;
+}

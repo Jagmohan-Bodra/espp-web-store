@@ -1,0 +1,63 @@
+.sign-up-persional-form {
+    &_container {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        &_box {
+            max-width: 800px;
+            &_description {
+                // margin: 20px 0;
+                padding: 15px;
+                text-align: center;
+            }
+            &_text {
+                color: #2e2e2e;
+            }
+            &_form {
+                padding: 15px;
+                width: 100%;
+                // &_row {
+                //     display: flex;
+                // }
+                &_input {
+                    color: #9b9b9b !important;
+                    border-color: #9b9b9b !important;
+                    :focus {
+                        color: #9b9b9b !important;
+                        border-color: #9b9b9b !important;
+                    }
+                }
+                &_btnForGot {
+                    float: right;
+                    padding: 0;
+                    margin: 20px 0 0 0;
+                }
+                &_btnSubmit {
+                    width: 100%;
+                    margin-top: 30px;
+                    background-color: #eee5d7;
+                    color: #444;
+                    border: 0;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: #ecd8b9;
+                        color: #444;
+                    }
+                }
+            }
+            &_bottom {
+                padding: 0 15px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                &_btnSignUp {
+                    padding: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+        
+    }
+}

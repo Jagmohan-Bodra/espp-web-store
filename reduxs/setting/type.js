@@ -1,0 +1,2 @@
+export const GET_SETTING_LIST = 'GET_SETTING_LIST';
+export const SETTING_LOADING = 'SETTING_LOADING';

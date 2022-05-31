@@ -1,0 +1,62 @@
+.home-join-mailing-list {
+  padding: 80px 0px;
+  background: url('https://placeimg.com/640/480/nature/grayscale') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  &_header {
+    text-align: center;
+    margin-bottom: 50px;
+    &_title {
+      color: $gray_main;
+      font-size: 2.5rem;
+      line-height: 2.4em;
+      font-weight: 600;
+      @include media-breakpoint-only(xs) {
+        font-size: 2.5rem;
+      }
+      @include media-breakpoint-only(sm) {
+        font-size: 2.5rem;
+      }
+    }
+    &_content {
+      color: $gray_main;
+      font-size: 1rem;
+      @include media-breakpoint-only(xs) {
+        font-size: 1rem;
+      }
+      @include media-breakpoint-only(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &_form {
+    margin: auto;
+    width: 500px;
+    @include media-breakpoint-only(xs) {
+      width: 80%;
+    }
+    @include media-breakpoint-only(sm) {
+      width: 80%;
+    }
+    &_input {
+      border: none;
+      padding: 25px;
+      margin-bottom: 20px;
+      color: black !important;
+      &:focus {
+        color: $gray_main;
+      }
+    }
+    &_submit {
+      background-image: linear-gradient(to right, #eee , $gray-1);
+      color: $gray_main;
+      border: none;
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 30px;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.scrollToTop {
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  text-align: center;
+  z-index: 110;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  //background-image: -webkit-linear-gradient(180deg, #10226D 0%, #c4b594 100%);
+  background-color: #c4b594;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 1px;
+  i {
+    position: relative;
+    bottom: 3px;
+    color: #fff;
+  }
+}

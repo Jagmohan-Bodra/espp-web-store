@@ -1,0 +1,110 @@
+/* .ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub{
+    background-color: #4b4b4b;
+    color: white;
+} */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.ant-btn.cancel-btn {
+  min-width: 100px;
+}
+
+.ant-btn.success-btn {
+  background-color: #1a9cb7;
+  color: white;
+  min-width: 100px;
+}
+
+.selected-type {
+  border: 1px solid red !important;
+}
+
+.check_your_order .check_your_order_option {
+  height: 100%;
+}
+
+.check_your_order .ant-menu.ant-menu-sub.ant-menu-vertical {
+  height: 100%;
+}
+
+.ant-menu .ant-menu-submenu-title {
+  text-align: left;
+}
+
+.menu_left_submenu .ant-menu-submenu-title{
+  font-weight: bold;
+}
+
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input):not(.ant-select-customize-input) .ant-select-selection-search-input {
+  height: 30px;
+}
+
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.form .ant-form-item {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .static_menu_button {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .page_container #wiooh-Jx50sgwuy {
+    display: none;
+    background: white;
+    position: fixed;
+    right: 0px ;
+    top: 52px ;
+    padding: 15px ;
+    margin-right: 15px;
+  }
+  #wiooh-Jx50sgwuy .dropdown_menu .basic-menu {
+    flex-direction: column ;
+  }
+  #wiooh-Jx50sgwuy .dropdown_menu .menu_item.active {
+    margin: 0 ;
+  }
+  #wiooh-Jx50sgwuy .styles_menu_static_group__3GeYQ {
+    margin: 0 ;
+  }
+  #wiooh-Jx50sgwuy .dropdown_menu .menu_item::before {
+    content: " " ;
+    position: absolute;
+    top: 8px;
+  }
+}
+
+@media (min-width: 375px) {
+  #wiooh-gDU8Dvy99 {
+      height: 70px;
+      position: relative;
+  }
+}

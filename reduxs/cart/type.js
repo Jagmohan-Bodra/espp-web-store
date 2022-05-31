@@ -1,0 +1,3 @@
+export const GET_CART_LIST = 'GET_CART_LIST';
+export const CART_LOADING = 'CART_LOADING';
+export const IS_ALLOW_CHECKOUT = 'IS_ALLOW_CHECKOUT';

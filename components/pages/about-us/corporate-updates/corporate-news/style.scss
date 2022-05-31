@@ -1,0 +1,23 @@
+@import './post-first/style.scss';
+@import './post-list/style.scss';
+
+.corporate-news-page {
+  @include media-breakpoint-down(sm) {
+    padding: 0 15px;
+  }
+  &_wrap_list {
+    margin-top: 170px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 70px;
+    }
+    p {
+      line-height: 35px;
+    }
+  }
+  &_list {
+    margin-top: 90px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 40px;
+    }
+  }
+}

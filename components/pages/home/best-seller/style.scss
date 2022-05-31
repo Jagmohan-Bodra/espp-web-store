@@ -1,0 +1,51 @@
+.home-best-seller {
+  padding: 50px 15px;
+  background: white;
+  &_title {
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      font-size: 3rem;
+      line-height: 2.4em;
+    }
+  }
+  &_swiper {
+    padding: 0 50px;
+    @include media-breakpoint-only(xs) {
+      padding: 0 0px;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 0 10px;
+    }
+    @include media-breakpoint-only(md) {
+      padding: 0 20px;
+    }
+    .swiper-button-prev {
+      background: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 1;
+      box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+      &:after {
+        content: '<';
+        font-size: 22px;
+        color: $gray-1;
+      }
+    }
+    
+    .swiper-button-next {
+      background: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 1;
+      box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4);
+      &:after {
+        content: '>';
+        font-size: 22px;
+        color: $gray-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.our-story-remixing-a-classic {
+    margin-bottom: 30px;
+    &_container {
+        @include media-breakpoint-only(xs) { 
+            padding: 0 20px;
+        }
+        @include media-breakpoint-only(sm) {
+            padding: 0 20px;
+        }
+        &_title {
+            margin-bottom: 30px;
+        }
+        &_image {
+            margin-bottom: 50px;
+            height: 500px;
+            @include media-breakpoint-only(xs) { 
+                height: 300px;
+            }
+              @include media-breakpoint-only(sm) {
+                height: 350px;
+              }
+              @include media-breakpoint-only(md) {
+                height: 400px;
+              }
+        }
+        &_content {
+            line-height: 2em;
+        }
+    }
+}

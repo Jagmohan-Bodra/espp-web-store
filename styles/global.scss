@@ -1,0 +1,42 @@
+@import '../public/scss/variables.scss';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+@import '../components/pages/style.scss';
+@import '../components/theme/style.scss';
+@import '../components/public/style.scss';
+@import '../components/modals/right-modal/style.scss';
+@import '../components/function-component/carts/style.scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2e2e2e;
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88888850; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55555550; 
+}
+
+.current_price_private {
+  color: $red-d-1;
+  margin: 0 15px;
+}

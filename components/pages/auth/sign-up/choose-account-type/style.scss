@@ -1,0 +1,42 @@
+.sign-up-choose-account-type {
+  margin: 50px 0;
+  min-height: 45vh;
+  &_container {
+    display: flex;
+    justify-content: center;
+    &_box {
+      width: 60%;
+      @include media-breakpoint-only(xs) {
+        width: 100%;
+        padding: 0 20px;
+      }
+      @include media-breakpoint-only(sm) {
+        width: 100%;
+        padding: 0 20px;
+      }
+      &_description {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      &_form {
+        &_flex_space {
+          display: flex;
+          justify-content: space-between;
+          max-width: 360px;
+          margin: auto;
+          .active {
+              font-weight: bold;
+          }
+        }
+        &_btnSubmit {
+          background-color: #efe6d6;
+          border: 0;
+          color: #444;
+          padding: 5px 50px;
+          float: right;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

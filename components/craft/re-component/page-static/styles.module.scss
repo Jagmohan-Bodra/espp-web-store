@@ -1,0 +1,89 @@
+// Home
+.btnSeeMore {
+  border: none;
+  background-color: #fff;
+  color: $gray_main;
+  padding: 8px 60px;
+  margin-top: 30px;
+}
+.ourStory {
+    background-color: #eee5d7;
+    text-align: center;
+    padding: 50px 0;
+}
+.carouselItemContent {
+  background-color: #fff;
+  opacity: 0.5;
+  padding: 20px;
+  width: 70%;
+  text-align: center;
+}
+.carouselItemContent > span {
+  font-size: 20px;
+}
+.setHeigthBestSeller {
+  height: 300px;
+}
+.productView {
+    display: flex;
+    justify-content: space-around;
+}
+.contSeeMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.btnShopMore {
+  background-color: #fff;
+  color: #666;
+  padding: 10px 50px;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+.contBestSeller {
+  background-color: #dee7ec;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.titleCenter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.contBrand {
+  background-color: #eee5d7;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.setHeigthBrand {
+  height: 200px;
+}
+.contMoreForYou {
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.setHeigthMore {
+  height: 600px;
+}
+.contForm {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.formSubscribe {
+  text-align: center;
+  width: 35%;
+}
+.formInput {
+  border: none;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.btnSub {
+  background-color: #eee;
+  color: $gray_main;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 30px;
+}
